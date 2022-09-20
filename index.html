@@ -5,10 +5,6 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta
-            name="description"
-            content="Documentation for the Kittn API"
-        >
     <title>API Reference</title>
 
     <style media="screen">
@@ -290,12 +286,9 @@
     <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-b12a2749.js"></script>
 
-    <script>
-      $(function() { setupCodeCopy(); });
-    </script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -304,295 +297,3096 @@
     </a>
     <div class="toc-wrapper">
       <img src="images/logo-1e815a84.png" class="logo" alt="" />
-        <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
-        </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
-          </li>
-          <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#german-identity-card-ocr" class="toc-h1 toc-link" data-title="German Identity Card OCR">German Identity Card OCR</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#http-request" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#request-parameters" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#response-format" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code" class="toc-h2 toc-link" data-title="Status code">Status code</a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+            <a href="#german-drivers-licence-ocr" class="toc-h1 toc-link" data-title="German Drivers Licence OCR">German Drivers Licence OCR</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-2" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-2" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-2" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-2" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#netherlands-identity-card-ocr" class="toc-h1 toc-link" data-title="Netherlands Identity Card OCR">Netherlands Identity Card OCR</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-3" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-3" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-3" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-3" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#norway-identity-card-ocr" class="toc-h1 toc-link" data-title="Norway Identity Card OCR">Norway Identity Card OCR</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-4" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-4" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-4" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-4" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#sweden-identity-card-ocr" class="toc-h1 toc-link" data-title="Sweden Identity Card OCR">Sweden Identity Card OCR</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-5" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-5" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-5" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-5" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#india-aadhaar-ocr" class="toc-h1 toc-link" data-title="India Aadhaar OCR">India Aadhaar OCR</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#front-ocr" class="toc-h2 toc-link" data-title="Front OCR">Front OCR</a>
+                  </li>
+                  <li>
+                    <a href="#back-ocr" class="toc-h2 toc-link" data-title="Back OCR">Back OCR</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#india-pan-ocr" class="toc-h1 toc-link" data-title="India Pan OCR">India Pan OCR</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-8" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-8" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-8" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-7" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#thailand-identity-card-ocr" class="toc-h1 toc-link" data-title="Thailand Identity Card OCR">Thailand Identity Card OCR</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-9" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-9" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-9" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-8" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#thailand-driver-39-s-license-ocr" class="toc-h1 toc-link" data-title="Thailand Driver's License OCR">Thailand Driver's License OCR</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-10" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-10" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-10" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-9" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#mexico-identity-card-ocr" class="toc-h1 toc-link" data-title="Mexico Identity Card OCR">Mexico Identity Card OCR</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-11" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-11" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-11" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-10" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#colombia-identity-card-ocr" class="toc-h1 toc-link" data-title="Colombia Identity Card OCR">Colombia Identity Card OCR</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#front-ocr-2" class="toc-h2 toc-link" data-title="Front OCR">Front OCR</a>
+                  </li>
+                  <li>
+                    <a href="#back-ocr-2" class="toc-h2 toc-link" data-title="Back OCR">Back OCR</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#face-comparison" class="toc-h1 toc-link" data-title="Face Comparison">Face Comparison</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-14" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-14" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-14" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-12" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+                  <li>
+                    <a href="#judgment-description" class="toc-h2 toc-link" data-title="Judgment description">Judgment description</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#hand-held-id-card-comparison" class="toc-h1 toc-link" data-title="Hand-held ID Card Comparison">Hand-held ID Card Comparison</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-15" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-15" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-15" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-13" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#face-search" class="toc-h1 toc-link" data-title="Face Search">Face Search</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#1-add-face-image" class="toc-h2 toc-link" data-title="1. add face image">1. add face image</a>
+                  </li>
+                  <li>
+                    <a href="#2-search-the-same-face" class="toc-h2 toc-link" data-title="2. search the same face">2. search the same face</a>
+                  </li>
+                  <li>
+                    <a href="#3-delete-face" class="toc-h2 toc-link" data-title="3. delete face">3. delete face</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#whatsapp-detail-detection" class="toc-h1 toc-link" data-title="WhatsApp Detail Detection">WhatsApp Detail Detection</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-19" class="toc-h2 toc-link" data-title="HTTP request">HTTP request</a>
+                  </li>
+                  <li>
+                    <a href="#request-parameters-19" class="toc-h2 toc-link" data-title="Request parameters">Request parameters</a>
+                  </li>
+                  <li>
+                    <a href="#response-format-19" class="toc-h2 toc-link" data-title="Response format">Response format</a>
+                  </li>
+                  <li>
+                    <a href="#callback-method" class="toc-h2 toc-link" data-title="Callback method">Callback method</a>
+                  </li>
+                  <li>
+                    <a href="#status-code-17" class="toc-h2 toc-link" data-title="Status code">Status code</a>
+                  </li>
+              </ul>
           </li>
       </ul>
-        <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
-        </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+        <h1 id='german-identity-card-ocr'>German Identity Card OCR</h1>
+<p>Card Field Recognition</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/slatedocs/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
 <blockquote>
-<p>To authorize, use this code:</p>
+<p>Code example:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span> <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/de_ocr/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
 </code></pre></div>
 <blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
+<p>Response for recognition success</p>
 </blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"CardNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LO1X00T47"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Surname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MUSTERMANN"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"GivenNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERIKA"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfBirth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01.08.2031"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"PlaceOfBirth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BERLIN"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfExpiry"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01.08.2031"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Nationality"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DEUTSCH"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/de_ocr/general</code></p>
+<h3 id='request-parameters'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>CardNumber</code>: card number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Surname</code>: surname</td>
+</tr>
+<tr>
+<td></td>
+<td><code>GivenNames</code>: given names</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfBirth</code>: date of birth</td>
+</tr>
+<tr>
+<td></td>
+<td><code>PlaceOfBirth</code>: place of birth</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfExpiry</code>: date of expiry</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Nationality</code>: nationality</td>
+</tr>
+</tbody></table>
+<h3 id='status-code'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='german-drivers-licence-ocr'>German Drivers Licence OCR</h1>
+<p>Card Field Recognition</p>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span> <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">();</span>
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/de_dl_ocr/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
 </code></pre></div>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>Response for recognition success</p>
 </blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"CardId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"B905 KODO168"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Surname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Smith"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"GivenNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfBirth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15.10.90"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"PlaceOfBirth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Berlin"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfIssue"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25.04.17"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfExpiry"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24.04.32"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Landratsamt"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Class"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AM/B/L"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-2'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/de_dl_ocr/general</code></p>
+<h3 id='request-parameters-2'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-2'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>CardNumber</code>: card number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Surname</code>: surname</td>
+</tr>
+<tr>
+<td></td>
+<td><code>GivenNames</code>: given names</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfBirth</code>: date of birth</td>
+</tr>
+<tr>
+<td></td>
+<td><code>PlaceOfBirth</code>: place of birth</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfExpiry</code>: date of expiry</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Nationality</code>: nationality</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Address</code>: address</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Class</code>: drivers licence class</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-2'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='netherlands-identity-card-ocr'>Netherlands Identity Card OCR</h1>
+<p>Card Field Recognition</p>
+
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/nl_ocr/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"DocumentNo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SPECI2021"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Surname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"De Bruijn"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"GivenNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Willeke Liselotte"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"V/F"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfBirth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10 MAA/MAR 1965"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfIssue"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02 AUG/AUG 2021"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfExpiry"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02 AUG/AUG 2031"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Nationality"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nederlandse"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-3'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/nl_ocr/general</code></p>
+<h3 id='request-parameters-3'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-3'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>Surname</code>: surname</td>
+</tr>
+<tr>
+<td></td>
+<td><code>GivenNames</code>: given names</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Gender</code>: gender</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfBirth</code>: date of birth</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DocumentNo</code>: document no</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfIssue</code>: date of issue</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfExpiry</code>: date of expiry</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Nationality</code>: nationality</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-3'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='norway-identity-card-ocr'>Norway Identity Card OCR</h1>
+<p>Card Field Recognition</p>
+
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/no_ocr/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"Surname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"STENBYEN"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"GivenNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SAMUND SPECIMEN"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Sex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Nationality"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Norsk/Norwegian"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfBirth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"23 APR/APR 56"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Height"</span><span class="p">:</span><span class="w"> </span><span class="s2">"179CM"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DocumentNo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GDC000001"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"CanNo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"164745"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfExpiry"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11 JUN/JUN 26"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-4'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/no_ocr/general</code></p>
+<h3 id='request-parameters-4'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-4'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>Surname</code>: surname</td>
+</tr>
+<tr>
+<td></td>
+<td><code>GivenNames</code>: given names</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Sex</code>: gender</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Nationality</code>: nationality</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfBirth</code>: date of birth</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Height</code>: height</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DocumentNo</code>: document no</td>
+</tr>
+<tr>
+<td></td>
+<td><code>CanNo</code>: can no</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfExpiry</code>: date of expiry</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-4'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='sweden-identity-card-ocr'>Sweden Identity Card OCR</h1>
+<p>Card Field Recognition</p>
+
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/se_ocr/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"Surname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SPECIMEN"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"GivenNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SVEA"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Sex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"K/F"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Nationality"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SVENSK/SWE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfBirth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"21 AUG/AUG 82"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"PersonalId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"820821-2384"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Height"</span><span class="p">:</span><span class="w"> </span><span class="s2">"170CM"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"CardNo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"59000002"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfIssue"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09 JUL/JUL 21"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfExpiry"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09 JUL/JUL 26"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Authority"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POLISMYNDIGHETEN"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-5'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/se_ocr/general</code></p>
+<h3 id='request-parameters-5'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-5'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>Surname</code>: surname</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Surname</code>: surname</td>
+</tr>
+<tr>
+<td></td>
+<td><code>GivenNames</code>: given names</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Sex</code>: gender</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Nationality</code>: nationality</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfBirth</code>: date of birth</td>
+</tr>
+<tr>
+<td></td>
+<td><code>PersonalId</code>: persional id</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Height</code>: height</td>
+</tr>
+<tr>
+<td></td>
+<td><code>CardNo</code>: card number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfIssue</code>: date of issue</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfExpiry</code>: date of expiry</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Authority</code>: issuing agency</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-5'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='india-aadhaar-ocr'>India Aadhaar OCR</h1>
+<p>Card Field Recognition</p>
+<h2 id='front-ocr'>Front OCR</h2>
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/in_ocr_front/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"CardNumber"</span><span class="p">:</span><span class="s2">"775754348277"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfBirth"</span><span class="p">:</span><span class="s2">"16/07/2000"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DownloadDate"</span><span class="p">:</span><span class="s2">"06/09/2020"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Gender"</span><span class="p">:</span><span class="s2">"FEMALE"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"IssueDate"</span><span class="p">:</span><span class="s2">"04/09/2020"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"MobileNumber"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Name"</span><span class="p">:</span><span class="s2">"Sinch Poonam Sagar"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"VID"</span><span class="p">:</span><span class="s2">"9150912715607691"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition id or name fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_RECOGNIZE_ERROR"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no id or name found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-6'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/in_ocr_front/general</code></p>
+<h3 id='request-parameters-6'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-6'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>CardNumber</code>: card number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfBirth</code>: date of birth</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DownloadDate</code>: download date</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Gender</code>: gender</td>
+</tr>
+<tr>
+<td></td>
+<td><code>IssueDate</code>: the issue date</td>
+</tr>
+<tr>
+<td></td>
+<td><code>MobileNumber</code>: mobile number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Name</code>: user name</td>
+</tr>
+<tr>
+<td></td>
+<td><code>VID</code>: vid number</td>
+</tr>
+</tbody></table>
+<h2 id='back-ocr'>Back OCR</h2>
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/in_ocr_back/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"City"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sitapur"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Province"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Uttar Pradesh"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"PostCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"261131"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S/O: Jameel Khan, tikariya, Tikariya, Sitapur, Uttar Pradesh - 261131"</span><span class="w">
+        </span><span class="nl">"CardNumber"</span><span class="p">:</span><span class="s2">"387133213107"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"VID"</span><span class="p">:</span><span class="s2">"9106098539989335"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition id or name fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_RECOGNIZE_ERROR"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no id or name found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-7'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/in_ocr_back/general</code></p>
+<h3 id='request-parameters-7'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-7'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>Address</code>: address</td>
+</tr>
+<tr>
+<td></td>
+<td><code>VID</code>: vid number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>CardNumber</code>: card number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>City</code>: city name</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Province</code>: province name</td>
+</tr>
+<tr>
+<td></td>
+<td><code>PostCode</code>: post code</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Address</code>: detail address info</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-6'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='india-pan-ocr'>India Pan OCR</h1>
+<p>card number + name recognition</p>
+
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/in_ocr_pan/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"CardNumber"</span><span class="p">:</span><span class="s2">"FBVPM7951K"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"DateOfBirth"</span><span class="p">:</span><span class="s2">"13/08/1998"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"FatherName"</span><span class="p">:</span><span class="s2">"MAHABUB ALI MAHAMMAD"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"Name"</span><span class="p">:</span><span class="s2">"IRSHAD MAHAMMAD"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition id or name fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_RECOGNIZE_ERROR"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no id or name found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-8'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/in_ocr_pan/general</code></p>
+<h3 id='request-parameters-8'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-8'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>CardNumber</code>: card number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfBirth</code>: date of birth</td>
+</tr>
+<tr>
+<td></td>
+<td><code>FatherName</code>: father name</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Name</code>: name</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-7'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='thailand-identity-card-ocr'>Thailand Identity Card OCR</h1>
+<p>id number + name recognition</p>
+
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/th_ocr/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"cardTypeTh"</span><span class="p">:</span><span class="s2">"บัตรประจำตัวประชาชน"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"cardTypeEn"</span><span class="p">:</span><span class="s2">"Thai National ID Card"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"idNumber"</span><span class="p">:</span><span class="s2">"1842356782169"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"serialNumber"</span><span class="p">:</span><span class="s2">"8407-03-22251350"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"nameTh"</span><span class="p">:</span><span class="s2">"น.ส.  พรนภา ยิ่งเภตรา"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"nameEn"</span><span class="p">:</span><span class="s2">"Miss. Ponnapa"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"lastNameEn"</span><span class="p">:</span><span class="s2">"Yinthpetra"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"birthTh"</span><span class="p">:</span><span class="s2">"29 ม.ค. 2540"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"birthEn"</span><span class="p">:</span><span class="s2">"29 Jan. 1997"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"issueDateEN"</span><span class="p">:</span><span class="s2">"12 Apr. 2017"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"issueDateTH"</span><span class="p">:</span><span class="s2">"12 เม.ย. 2560"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"expiryDateEN"</span><span class="p">:</span><span class="s2">"22 Jun. 2025"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"expiryDateTH"</span><span class="p">:</span><span class="s2">"22 มิ.ย. 2568"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"religion"</span><span class="p">:</span><span class="s2">"พุทธ"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"address"</span><span class="p">:</span><span class="s2">"ที่อยู่ 125 หมู่ที่ 7 ต.ช้างขวา อ.กาญจนดิษฐ์"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition id or name fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_RECOGNIZE_ERROR"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no id or name found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-9'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/th_ocr/general</code></p>
+<h3 id='request-parameters-9'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-9'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>cardTypeTh</code>: th card type</td>
+</tr>
+<tr>
+<td></td>
+<td><code>cardTypeEn</code>: en card type</td>
+</tr>
+<tr>
+<td></td>
+<td><code>idNumber</code>: id number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>serialNumber</code>: serial number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>nameTh</code>: name</td>
+</tr>
+<tr>
+<td></td>
+<td><code>nameEn</code>: name</td>
+</tr>
+<tr>
+<td></td>
+<td><code>lastNameEn</code>: last name of En</td>
+</tr>
+<tr>
+<td></td>
+<td><code>birthTh</code>: birth day of th</td>
+</tr>
+<tr>
+<td></td>
+<td><code>birthEn</code>: birth day of en</td>
+</tr>
+<tr>
+<td></td>
+<td><code>issueDateEN</code>: en issuse date</td>
+</tr>
+<tr>
+<td></td>
+<td><code>issueDateTH</code>: th issue date</td>
+</tr>
+<tr>
+<td></td>
+<td><code>expiryDateEN</code>: expiry date</td>
+</tr>
+<tr>
+<td></td>
+<td><code>expiryDateTH</code>: expiry date</td>
+</tr>
+<tr>
+<td></td>
+<td><code>religion</code>: religion</td>
+</tr>
+<tr>
+<td></td>
+<td><code>address</code>: address</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-8'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='thailand-driver-39-s-license-ocr'>Thailand Driver&#39;s License OCR</h1>
+<p>license number + name recognition + id number</p>
+
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>import speedin
+
+api = speedin.client('YOUR_ACCESS_KEY', 'YOUR_SECRET_KEY')
+data = {"img": "BASE64_ENCODE_VALUE"}
+url = "https://api.aisolution.credit/v1/th_ocr/general"
+response = api.request(url, data)
+print(response)
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"cardTypeTh"</span><span class="p">:</span><span class="s2">"ใบอนุญาตขับรถ"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"cardTypeEn"</span><span class="p">:</span><span class="s2">"Driving License"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"licenseNumber"</span><span class="p">:</span><span class="s2">"61002614"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"idNumber"</span><span class="p">:</span><span class="s2">"1102652247328"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"nameTh"</span><span class="p">:</span><span class="s2">"นาย  อนิรุต ทองรักอยู่"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"nameEn"</span><span class="p">:</span><span class="s2">"MR. ANIRUT THONGRAKYU"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"birthTh"</span><span class="p">:</span><span class="s2">"27 พฤษภาคม 2538"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"birthEn"</span><span class="p">:</span><span class="s2">"27 May 1995"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"issueDate"</span><span class="p">:</span><span class="s2">"24 December 2018"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"expiryDate"</span><span class="p">:</span><span class="s2">"24 December 2020"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_RECOGNIZE_ERROR"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no number or name found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-10'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/th_ocr/general</code></p>
+<h3 id='request-parameters-10'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-10'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>cardTypeTh</code>: th card type</td>
+</tr>
+<tr>
+<td></td>
+<td><code>cardTypeEn</code>: en card type</td>
+</tr>
+<tr>
+<td></td>
+<td><code>licenseNumber</code>: license number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>idNumber</code>: id number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>nameTH</code>: th name</td>
+</tr>
+<tr>
+<td></td>
+<td><code>nameEn</code>: en name</td>
+</tr>
+<tr>
+<td></td>
+<td><code>birthTh</code>: birth day of th</td>
+</tr>
+<tr>
+<td></td>
+<td><code>birthEn</code>: birth day of en</td>
+</tr>
+<tr>
+<td></td>
+<td><code>issueDate</code>: issuse date</td>
+</tr>
+<tr>
+<td></td>
+<td><code>expiryDate</code>: expiry date</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-9'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='mexico-identity-card-ocr'>Mexico Identity Card OCR</h1>
+<p>id number + name recognition</p>
+
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/mx_ocr/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"idNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MONY801107MTSLRR07"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"voterId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MLNRYR80110728M300"</span><span class="w">
+        </span><span class="nl">"fullName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MOLINA NORATO YURI YERANIA"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"fatherLastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MOLINA"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"motherLastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NORATO"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"YURI YERANIA"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15/07/1987"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"issueYear"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2011"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"expiryYear"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"registrationYearAndMonth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"200101"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"municipalNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"041"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"postalCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"87040"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"placeNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0001"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"stateNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TAMPS"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VICTORIA"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"addressAll"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AND 8 1121 INF ALDAMA 87040 VICTORIA ,TAMPS."</span><span class="p">,</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition id or name fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_RECOGNIZE_ERROR"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no id or name found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-11'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/mx_ocr/general</code></p>
+<h3 id='request-parameters-11'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-11'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>idNumber</code>: id number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>fullName</code>: name</td>
+</tr>
+<tr>
+<td></td>
+<td><code>fatherLastName</code>:father lastName</td>
+</tr>
+<tr>
+<td></td>
+<td><code>motherLastName</code>: mother lastName</td>
+</tr>
+<tr>
+<td></td>
+<td><code>name</code>: name</td>
+</tr>
+<tr>
+<td></td>
+<td><code>birthday</code>: birthday</td>
+</tr>
+<tr>
+<td></td>
+<td><code>gender</code>: gender</td>
+</tr>
+<tr>
+<td></td>
+<td><code>expiryYear</code>: expiry year</td>
+</tr>
+<tr>
+<td></td>
+<td><code>issueYear</code> : issue year</td>
+</tr>
+<tr>
+<td></td>
+<td><code>voterId</code>: voter id</td>
+</tr>
+<tr>
+<td></td>
+<td><code>placeNumber</code>: place number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>stateNumber</code>: state number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>municipalNumber</code>: municipal number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>state</code>: state</td>
+</tr>
+<tr>
+<td></td>
+<td><code>district</code>: district</td>
+</tr>
+<tr>
+<td></td>
+<td><code>addressAll</code>: address</td>
+</tr>
+<tr>
+<td></td>
+<td><code>postalCode</code>: postal code</td>
+</tr>
+<tr>
+<td></td>
+<td><code>registrationYearAndMonth</code>: registration year and month</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-10'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='colombia-identity-card-ocr'>Colombia Identity Card OCR</h1>
+<p>Card Field Recognition</p>
+<h2 id='front-ocr-2'>Front OCR</h2>
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/co_ocr_front/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+    </span><span class="nl">"CardNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.136.879.353"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"Surname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RUEDA PLATA"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"GivenNames"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OSCAR FELIPE"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition id or name fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_RECOGNIZE_ERROR"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no id or name found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-12'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/co_ocr_front/general</code></p>
+<h3 id='request-parameters-12'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-12'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>CardNumber</code>: card number</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Surname</code>: surname</td>
+</tr>
+<tr>
+<td></td>
+<td><code>GivenNames</code>: given names</td>
+</tr>
+</tbody></table>
+<h2 id='back-ocr-2'>Back OCR</h2>
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/co_ocr_back/general?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for recognition success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+    </span><span class="nl">"DateOfBirth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"17-ENE-1987"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"Height"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.72"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"BloodType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A+"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"DateOfIssue"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16-FEB-2005"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"PlaceOfIssue"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BOGOTA D.C."</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"Gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"PlaceOfBirth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BOGOTA D.C (CUNDINAMARCA)"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check input image and retry"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for recognition id or name fail</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_RECOGNIZE_ERROR"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no id or name found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid request parameters</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"check request params"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for invalid image format</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_FORMAT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image format not support"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for image size larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-13'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/co_ocr_back/general</code></p>
+<h3 id='request-parameters-13'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-13'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>DateOfBirth</code>: date of birth</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Height</code>: height</td>
+</tr>
+<tr>
+<td></td>
+<td><code>BloodType</code>: blood type</td>
+</tr>
+<tr>
+<td></td>
+<td><code>DateOfIssue</code>: date of issue</td>
+</tr>
+<tr>
+<td></td>
+<td><code>PlaceOfIssue</code>: place of issue</td>
+</tr>
+<tr>
+<td></td>
+<td><code>Gender</code>: gender</td>
+</tr>
+<tr>
+<td></td>
+<td><code>PlaceOfBirth</code>: place of birth</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-11'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, image recognition error, please check input image</td>
+</tr>
+<tr>
+<td><code>IMAGE_RECOGNIZE_ERROR</code></td>
+<td><code>free</code>, image recognition error</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_FORMAT</code></td>
+<td><code>free</code>, invalid image format, image format should be one of jpeg/jpg/png/bmp</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, invalid image size, should be less than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='face-comparison'>Face Comparison</h1>
+<p>Analyze the possibility of two faces belong to the same person. Using our face matching technology, you will get our judgment about whether it is the same person as well as a similarity score.</p>
+
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/facecompare?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img1=BASE64_ENCODE_VALUE' \
+--data-urlencode 'img2=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response example for same person</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"similarity"</span><span class="p">:</span><span class="w"> </span><span class="mf">97.501</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SAME PERSON"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response example for not the same person</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"similarity"</span><span class="p">:</span><span class="w"> </span><span class="mf">27.501</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NOT SAME PERSON"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response example for not sure</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"similarity"</span><span class="p">:</span><span class="w"> </span><span class="mf">50.501</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NOT SURE"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response example for error request</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error message"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response example for uploaded image larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response example can not detect face</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="s2">"IMAGEB_FACE_DETECT_FAILED"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-14'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/facecompare</code></p>
+<h3 id='request-parameters-14'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img1</code></td>
+<td><code>string</code>, first image in base64 encoded format</td>
+</tr>
+<tr>
+<td><code>img2</code></td>
+<td><code>string</code>, second image in base64 encoded format</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-14'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>similarity</code>: similarity score, 0~100</td>
+</tr>
+<tr>
+<td></td>
+<td><code>result</code>: <em>judgment</em></td>
+</tr>
+<tr>
+<td></td>
+<td><code>IMAGEB_FACE_DETECT_FAILED</code>: can not detect faces on the images</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-12'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success, <code>message.similarity</code> contains the similarity score</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, image size larger than 2M</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, see message for details</td>
+</tr>
+</tbody></table>
+<h3 id='judgment-description'>Judgment description</h3>
+<table><thead>
+<tr>
+<th>result</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>SAME PERSON</code></td>
+<td>the two images are belong to the same person</td>
+</tr>
+<tr>
+<td><code>NOT SAME PERSON</code></td>
+<td>the two images are not belong to the same person</td>
+</tr>
+<tr>
+<td><code>NOT SURE</code></td>
+<td>not sure</td>
+</tr>
+</tbody></table>
+<h1 id='hand-held-id-card-comparison'>Hand-held ID Card Comparison</h1>
+<p>Analyze the possibility of the person holding the ID card and the photo of ID card belonging to the same person. Using our face matching technology, you will get our judgment about whether it is the same person as well as a similarity score.</p>
+
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/idholding?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response example for same person</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"similarity"</span><span class="p">:</span><span class="w"> </span><span class="mf">97.501</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SAME PERSON"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response example for not the same person</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"similarity"</span><span class="p">:</span><span class="w"> </span><span class="mf">27.501</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NOT SAME PERSON"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response example for error request</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_REQUEST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error message"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response example for uploaded image larger than 2M</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE_INVALID_SIZE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image larger than 2M"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response example for wrong image, not ID holding image</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVALID_FACE_NUM"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0 faces found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-15'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/idholding</code></p>
+<h3 id='request-parameters-15'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, base64 encoded image</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-15'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td><code>similarity</code>: similarity score, 0~100</td>
+</tr>
+<tr>
+<td></td>
+<td><code>result</code>: <em>judgment</em></td>
+</tr>
+</tbody></table>
+<h3 id='status-code-13'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success, <code>message.similarity</code> contains the similarity score</td>
+</tr>
+<tr>
+<td><code>INVALID_REQUEST</code></td>
+<td><code>free</code>, invalid request parameters</td>
+</tr>
+<tr>
+<td><code>IMAGE_INVALID_SIZE</code></td>
+<td><code>free</code>, image size larger than 2M</td>
+</tr>
+<tr>
+<td><code>INVALID_FACE_NUM</code></td>
+<td><code>free</code>, not ID holding image</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='face-search'>Face Search</h1>
+<p>Search for the same face photos that have been added by face photos</p>
+<h2 id='1-add-face-image'>1. add face image</h2>
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/addface?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for generate token success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"group_id"</span><span class="p">:</span><span class="s2">"LxiKPLIMGFpXzXas"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"person_id"</span><span class="p">:</span><span class="s2">"c5r7jedkujdbnasarhn0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"person_count"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for detecting face failed</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"FACE_DETECT_FAILED"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"group_id"</span><span class="p">:</span><span class="s2">"LxiKPLIMGFpXzXas"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"person_id"</span><span class="p">:</span><span class="s2">"c5r7jedkujdbnasarhn0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"person_count"</span><span class="p">:</span><span class="mi">0</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-16'>HTTP request</h3>
+<p><code>POST http://api.aisolution.credit/v1/addface</code></p>
+<h3 id='request-parameters-16'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, use base64 to encode the face image</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-16'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code, if <code>status</code> is <code>OK</code>, successfully add face image</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td>some message of the addition result</td>
+</tr>
+<tr>
+<td></td>
+<td><code>group_id</code>: this is the add user group, actually it&#39;s your access key</td>
+</tr>
+<tr>
+<td></td>
+<td><code>person_id</code>: this is the unique personal id which you have added the personal face</td>
+</tr>
+<tr>
+<td></td>
+<td><code>person_count</code>: the face count that you have added the same face</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-14'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>free</code>, successfully add face image, add face is free</td>
+</tr>
+<tr>
+<td><code>FACE_DETECT_FAILED</code></td>
+<td><code>free</code>, detect face failed</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, service inner error</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h2 id='2-search-the-same-face'>2. search the same face</h2>
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/searchface?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+</code></pre></div>
+<blockquote>
+<p>Response for generate token success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"confidence"</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"person_id"</span><span class="p">:</span><span class="s2">"c5r7jedkujdbnasarhn0"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for detecting face failed</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"FACE_DETECT_FAILED"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:[]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-17'>HTTP request</h3>
+<p><code>POST http://api.aisolution.credit/v1/searchface</code></p>
+<h3 id='request-parameters-17'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>img</code></td>
+<td><code>string</code>, the base64 encode of the face image</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-17'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td>some message of the face search result</td>
+</tr>
+<tr>
+<td></td>
+<td><code>confidence</code>: this is the confidence level of the searched face and the recognized face id</td>
+</tr>
+<tr>
+<td></td>
+<td><code>person_id</code>: this is the personal id  which you have added</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-15'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>charge</code>, success search the face image</td>
+</tr>
+<tr>
+<td><code>FAIL</code></td>
+<td><code>free</code>, not pass living recognition</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+<tr>
+<td><code>FACE_DETECT_FAILED</code></td>
+<td><code>free</code>, not found face in this image</td>
+</tr>
+</tbody></table>
+<h2 id='3-delete-face'>3. delete face</h2>
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/delface?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'person_id=personId'
+</code></pre></div>
+<blockquote>
+<p>Response for delete face success</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for input person id not exist</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"PERSON_ID_NOT_EXIST"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response for server error</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RETRY_LATER"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service is not available right now, please try again later"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request-18'>HTTP request</h3>
+<p><code>POST http://api.aisolution.credit/v1/delface</code></p>
+<h3 id='request-parameters-18'>Request parameters</h3>
+<table><thead>
+<tr>
+<th>parameter</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>person_id</code></td>
+<td><code>string</code>, `person id</td>
+</tr>
+</tbody></table>
+<h3 id='response-format-18'>Response format</h3>
+<table><thead>
+<tr>
+<th>fields</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status code</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td>err description</td>
+</tr>
+</tbody></table>
+<h3 id='status-code-16'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td><code>free</code>, success delete face</td>
+</tr>
+<tr>
+<td><code>PERSON_ID_NOT_EXIST</code></td>
+<td><code>free</code>, input person id not exist</td>
+</tr>
+<tr>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error</td>
+</tr>
+</tbody></table>
+<h1 id='whatsapp-detail-detection'>WhatsApp Detail Detection</h1>
+<p>Check the details of the WhatsApp of the input global number, whether it is whatsapp account, status update time, signature, whether it is a corporate account, whether there is an avatar.</p>
+
+<blockquote>
+<p>Code example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>curl --location --request POST 'https://api.aisolution.credit/v1/gliswadetail?token=TOKEN' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'callback=https://YOUR_CALLBACK_URL' \
+--data-urlencode 'number=81387300008'
+</code></pre></div>
+<blockquote>
+<p>Non-callback request (callback is empty), response for the input number have already registered whatsapp</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+6284921089722"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"whatsapp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yes"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"status_update"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20180825"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"signature"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Saya suka global"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"business_user"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yes"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Non-callback request (callback is empty), response for the input number not register whatsapp</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+       </span><span class="nl">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+6284921089722"</span><span class="p">,</span><span class="w">
+       </span><span class="nl">"whatsapp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no"</span><span class="w">
   </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
-</tr>
-</tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span> <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
-</tr>
-</tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span> <span class="se">\</span>
-  <span class="nt">-X</span> DELETE <span class="se">\</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre></div>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>Non-callback request (callback is empty), response for the input number is checking</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+6284921089722"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"whatsapp"</span><span class="p">:</span><span class="w"> </span><span class="s2">"checking"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
+<blockquote>
+<p>Return by callback address (callback address) </p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>GET https://YOUR_CALLBACKURL/?number<span class="o">=</span>%2B62813116594289&amp;whatsapp<span class="o">=</span><span class="nb">yes</span>&amp;status_update<span class="o">=</span>20180825&amp;signature<span class="o">=</span>Saya+suka+global&amp;business_user<span class="o">=</span>no&amp;avatar<span class="o">=</span><span class="nb">yes</span>
+</code></pre></div><h3 id='http-request-19'>HTTP request</h3>
+<p><code>POST https://api.aisolution.credit/v1/gliswadetail</code></p>
+<h3 id='request-parameters-19'>Request parameters</h3>
 <table><thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
+<th>parameter</th>
+<th>description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td><code>number</code></td>
+<td><code>string</code>, phone number</td>
+</tr>
+<tr>
+<td><code>country</code></td>
+<td><code>string</code>,Country abbreviation, Among them Philippines: PH, Vietnam: VN, India: IN</td>
+</tr>
+<tr>
+<td><code>callback</code></td>
+<td><code>optional</code>, <code>string</code>, callback url</td>
+</tr>
+<tr>
+<td><code>servstatus</code></td>
+<td><code>optional</code>, <code>string</code>, When the value is y, it will return unavailable once the service is unavailable</td>
 </tr>
 </tbody></table>
-<h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
+<h3 id='response-format-19'>Response format</h3>
 <table><thead>
 <tr>
-<th>Error Code</th>
-<th>Meaning</th>
+<th>fields</th>
+<th>description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
+<td><code>status</code></td>
+<td>status code</td>
 </tr>
 <tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
+<td><code>message</code></td>
+<td><code>number</code>: phone number</td>
 </tr>
 <tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+<td></td>
+<td><code>whatsapp</code>: conclusion</td>
 </tr>
 <tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
+<td></td>
+<td><code>status_update</code>: status update</td>
 </tr>
 <tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+<td></td>
+<td><code>signature</code>: signature</td>
 </tr>
 <tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
+<td></td>
+<td><code>business_user</code>: business user</td>
 </tr>
 <tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
+<td></td>
+<td><code>avatar</code>: avatar</td>
+</tr>
+</tbody></table>
+<h3 id='callback-method'>Callback method</h3>
+<p>When the field callback is not empty, it is returned to the callback URL once the result is queried. Please do not call back the same number multiple times. Return method is GET https://YOUR_CALLBACKURL/?number=%2B62813116594289&amp;whatsapp=yes&amp;status_update=20180825&amp;signature=Saya+suka+global&amp;business_user=no&amp;avatar=yes</p>
+<h3 id='status-code-17'>Status code</h3>
+<table><thead>
+<tr>
+<th>status</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OK</code></td>
+<td>the whatsapp value is checking, unavailable for free else charge, <code>message</code> contains the result</td>
 </tr>
 <tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
+<td><code>FAIL</code></td>
+<td><code>free</code>, invalid query</td>
 </tr>
 <tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+<td><code>INVALID_INPUT</code></td>
+<td><code>free</code>, invalid input</td>
 </tr>
 <tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+<td><code>RETRY_LATER</code></td>
+<td><code>free</code>, server error, please try again later</td>
 </tr>
 </tbody></table>
 
       </div>
       <div class="dark-box">
-          <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
-          </div>
       </div>
     </div>
   </body>
