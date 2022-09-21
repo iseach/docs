@@ -1,6 +1,6 @@
 languageCode = "en-us"
-baseurl = "https://docuapi.netlify.com/"
-title = "DocuAPI Example Site"
+baseurl = "https://docs.nlp.ac.cn/"
+title = "API Site"
 
 disableKinds = ["taxonomyTerm"]
 
