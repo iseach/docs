@@ -32,20 +32,24 @@ maxMenuDepth = 3 # (optional) available options are: 1, 2, or 3 (default: 2)
   
 # Configure the language example tabs.
 [[params.language_tabs]]
-key = "go"
-name = "Go" 
-[[params.language_tabs]]
 key = "shell"
-name = "Shell" 
+name = "Shell"
 [[params.language_tabs]]
-key = "ruby"
-name = "Ruby"
+key = "javascript"
+name = "JavaScript"
 [[params.language_tabs]]
 key = "python"
 name = "Python"
 [[params.language_tabs]]
-key = "javascript"
-name = "Javascript"
+key = "php"
+name = "PHP"
+[[params.language_tabs]]
+key = "java"
+name = "Java"
+[[params.language_tabs]]
+key = "go"
+name = "Go"
+
 
 #Languages 
 [languages]
