@@ -1,6 +1,8 @@
 ---
 weight: 10
 title: API Reference
+
+search: true
 ---
 
 # 概述
@@ -17,3 +19,10 @@ SDK初始化，需要用户先申请到属于自己的AK和SK。
 请确保将<code>YOUR_ACCESS_KEY</code>和<code>YOUR_SECRET_KEY</code>替换为你自己的AK和SK。
 </aside>
 
+# 用户认证
+
+我们使用apiKey来认证用户，您可以在开发者门户中获取apiKey。
+
+apiKey需要包含在所有的API请求中，请求Header如下：
+
+`X-Api-Key: meowmeowmeow`

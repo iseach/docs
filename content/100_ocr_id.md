@@ -795,6 +795,146 @@ status | description
 `IMAGE_INVALID_SIZE` | `free`, invalid image size, should be less than 2M
 `RETRY_LATER` | `free`, server error
 
+## Indonesia Identity Card OCR
+
+license number + name recognition + id number
+
+> Code example:
+
+```curl
+import speedin
+
+api = speedin.client('YOUR_ACCESS_KEY', 'YOUR_SECRET_KEY')
+data = {"img": "BASE64_ENCODE_VALUE"}
+url = "https://api.aisolution.credit/v1/ocr_id"
+response = api.request(url, data)
+print(response)
+```
+
+> Response for recognition success
+
+```json
+{
+  "status": "OK",
+  "message": {
+    "name": "HELLO NAME",
+    "id": "3171024302821001",
+    "pob": "GARESSI SUPPA",
+    "dob": "01-01-1961",
+    "gender": "LAKI-LAKI",
+    "address": "BTN UNHALU BLOK C NO. 28",
+    "rt": "006",
+    "rw": "003",
+    "village": "KAMBU",
+    "district": "KAMBU",
+    "religion": "ISLAM",
+    "marital_status": "KAWIN",
+    "work": "PEGAWAI NEGERI SIPIL (PNS)",
+    "nationnality": "WNI",
+    "city": "KOTA KENDARI",
+    "province": "SULAWESI TENGGARA"
+  }
+}
+```
+
+> Response for recognition fail
+
+```json
+{
+    "status": "FAIL",
+    "message": "check input image and retry"
+}
+```
+
+> Response for recognition fail
+
+```json
+{
+    "status": "IMAGE_RECOGNIZE_ERROR",
+    "message": "no number or name found"
+}
+```
+
+> Response for invalid request parameters
+
+```json
+{
+    "status": "INVALID_REQUEST",
+    "message": "check request params"
+}
+```
+
+> Response for invalid image format
+
+```json
+{
+    "status": "IMAGE_INVALID_FORMAT",
+    "message": "image format not support"
+}
+```
+
+> Response for image size larger than 2M
+
+```json
+{
+    "status": "IMAGE_INVALID_SIZE",
+    "message": "image larger than 2M"
+}
+```
+
+> Response for server error
+
+```json
+{
+    "status": "RETRY_LATER",
+    "message": "Service is not available right now, please try again later"
+}
+```
+
+### HTTP request
+
+`POST https://api.aisolution.credit/v1/ocr_id`
+
+### Request parameters
+
+parameter | description
+--------- | -------
+`img` | `string`, base64 encoded image. It is recommended that the image be less than 200KB, so it will be returned within 2 seconds, otherwise the return time will be longer.
+
+### Response format
+
+fields | description
+--------- | -------
+`status` | status code
+`message` |`id`: ID card number, `NIK`
+ | `name`: name
+ | `pob`：place of birth，`maybe empty`
+ | `dob`：date of birth，`maybe empty`
+ | `gender`：gender，`maybe empty`
+ | `address`：address，`maybe empty`
+ | `province`：province，`maybe empty`
+ | `city`：city，`maybe empty`
+ | `district`：district，`maybe empty`
+ | `village`：village，`maybe empty`
+ | `rt`：leadership，`maybe empty`
+ | `rw`：neighborhood committees，`maybe empty`
+ | `religion`：religion，`maybe empty`
+ | `marital_status`：marital status，`maybe empty`
+ | `work`：work，`maybe empty`
+ | `nationnality`：nationnality，`maybe empty`
+
+### Status code
+
+status | description
+--------- | -------
+`OK` | `charge`, success
+`FAIL` | `free`, image recognition error, please check input image
+`IMAGE_RECOGNIZE_ERROR` | `free`, image recognition error
+`INVALID_REQUEST` | `free`, invalid request parameters
+`IMAGE_INVALID_FORMAT` | `free`, invalid image format, image format should be one of jpeg/jpg/png/bmp
+`IMAGE_INVALID_SIZE` | `free`, invalid image size, should be less than 2M
+`RETRY_LATER` | `free`, server error
+
 ## Thailand Identity Card OCR
 
 id number + name recognition
@@ -949,7 +1089,7 @@ curl --location --request POST 'https://api.aisolution.credit/v1/mx_ocr/general?
     "message": {
         "gender": "M",
         "idNumber": "MONY801107MTSLRR07",
-        "voterId": "MLNRYR80110728M300"
+        "voterId": "MLNRYR80110728M300",
         "fullName": "MOLINA NORATO YURI YERANIA",
         "fatherLastName": "MOLINA",
         "motherLastName": "NORATO",

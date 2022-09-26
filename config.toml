@@ -81,3 +81,7 @@ toc_footers = [
 # Norwegian uses angled quotes
 angledQuotes = true
 hrefTargetBlank = true
+
+[security]
+[security.exec]
+osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM|HOME|SSH_AUTH_SOCK|USERPROFILE|XDG_CONFIG_HOME|HTTP_PROXY|HTTPS_PROXY)$']

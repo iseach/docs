@@ -123,3 +123,116 @@ province|省
 city|市
 county|县
 
+## 身份证 OCR
+
+身份证OCR字段识别
+
+> 代码示例：
+
+```curl
+curl --location --request POST 'https://api.aisolution.credit/v1/ocr_cn' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'img=BASE64_ENCODE_VALUE'
+```
+
+> 身份证正面的识别样例
+
+```json
+{
+    "status":"OK",
+    "message":{
+        "identityNo": "6123221985032345",
+        "name": "张三",
+        "gender": "男",
+        "ethnic": "汉",
+        "birthDate": "1993年3月03日",
+        "birthPlace": "北京市海淀区学院路219号1-1"
+    }
+}
+```
+
+> 身份证反面的识别样例
+
+```json
+{
+    "status":"OK",
+    "message":{
+        "nationality": "中华人民共和国",
+        "cType": "居民身份证",
+        "authority": "北京市公安局海淀分局",
+        "effectiveDate": "2014.09.25-2034.09.25"
+    }
+}
+```
+
+
+> 图片识别失败样例
+
+```json
+{
+  "status": "FAIL",
+  "message": "check input image and retry"
+}
+```
+
+> 请求参数错误
+
+```json
+{
+  "status": "INVALID_REQUEST",
+  "message": "check request params"
+}
+```
+
+> 上传的图片格式错误应答样例
+
+```json
+{
+  "status": "IMAGE_INVALID_FORMAT",
+  "message": "image format not support"
+}
+```
+
+> 照片超过2M应答样例
+
+```json
+{
+  "status": "IMAGE_INVALID_SIZE",
+  "message": "image larger than 2M"
+}
+```
+
+> 服务器内部错误
+
+```json
+{
+    "status": "RETRY_LATER",
+    "message": "Service is not available right now, please try again later"
+}
+```
+
+### HTTP请求
+
+`POST https://api.aisolution.credit/v1/ocr_cn`
+
+### 请求参数
+参数 | 描述
+--------- | -------
+`img` | `字符串`，base64编码的身份证照片，建议图片小于200KB，这样会在2秒内返回，否则返回时间较长。
+
+### 返回数据格式
+
+参数 | 描述
+--------- | -------
+`status` | 状态码
+`message` | `identityNo`：身份证号码，`可能为空`
+ | `name`：姓名，`可能为空`
+ | `gender`：性别，`可能为空`
+ | `ethnic`：种族，`可能为空`
+ | `birthDate`：出生日期，`可能为空`
+ | `birthPlace`：出生地，`可能为空`
+ | `nationality`：国籍，`可能为空`
+ | `cType`：卡片类型，`可能为空`
+ | `authority`：颁发机构，`可能为空`
+ | `effectiveDate`：有效期，`可能为空`
+
