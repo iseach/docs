@@ -5,7 +5,7 @@ title: API Reference
 search: true
 ---
 
-# 图像生成文本👁️‍🗨️
+# 图像生成文本👁️‍🗨️ {#image2text}
 
 基于BriVL (Bridging Vision and Language Model)的图像生成文本模型。
 

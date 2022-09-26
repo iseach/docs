@@ -586,7 +586,7 @@ curl --location --request POST 'https://api.aisolution.credit/v1/ocr_panama' \
 --------- | -------
 `img` | `字符串`，base64编码的身份证照片，建议图片小于200KB，这样会在2秒内返回，否则返回时间较长。
 
-### 返回数据格式
+### 返回数据格式 {#ocr_panama_ret}
 
 参数 | 描述
 --------- | -------
