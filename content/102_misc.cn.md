@@ -598,7 +598,7 @@ curl --location --request POST 'https://api.aisolution.credit/v1/ocr_panama' \
  | `gender`: 性别，`可能为空`
  | `seamanBook`: 海员薄，`可能为空`
  | `idNumber`: 证书ID，`可能为空`
- | `seafarerId`: 出啊元编号，`可能为空`
+ | `seafarerId`: 船员编号，`可能为空`
  | `birthDate`: 出生日期，`可能为空`
  | `birthPlace`: 出生地，`可能为空`
  | `regional`: 区域，`可能为空`
